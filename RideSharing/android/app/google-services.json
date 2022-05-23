@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "905685576767",
+    "firebase_url": "https://ridesharingapp-8cfb7-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "ridesharingapp-8cfb7",
+    "storage_bucket": "ridesharingapp-8cfb7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:905685576767:android:a010afb7c2caecdef41c8a",
+        "android_client_info": {
+          "package_name": "com.Application.RideSharingApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "905685576767-ml1r86tkbj91eg92gqmuub8un1f13gf6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk4_PkuNNSBFHRgutZYy9JRtMT53CSfLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "905685576767-ml1r86tkbj91eg92gqmuub8un1f13gf6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
