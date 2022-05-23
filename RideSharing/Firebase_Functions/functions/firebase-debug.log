@@ -1,0 +1,78 @@
+[debug] [2022-05-22T17:50:49.882Z] ----------------------------------------------------------------------
+[debug] [2022-05-22T17:50:49.884Z] Command:       E:\Code\Node\node.exe C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-22T17:50:49.885Z] CLI Version:   11.0.0
+[debug] [2022-05-22T17:50:49.885Z] Platform:      win32
+[debug] [2022-05-22T17:50:49.885Z] Node Version:  v16.15.0
+[debug] [2022-05-22T17:50:49.887Z] Time:          Sun May 22 2022 20:50:49 GMT+0300 (Ora de vară a Europei de Est)
+[debug] [2022-05-22T17:50:49.887Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-22T17:50:49.943Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-22T17:50:49.943Z] > authorizing via signed-in user (bogdan.ghinga@gmail.com)
+[debug] [2022-05-22T17:50:49.944Z] [iam] checking project ridesharingapp-8cfb7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-22T17:50:49.945Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ridesharingapp-8cfb7:testIamPermissions [none]
+[debug] [2022-05-22T17:50:49.946Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ridesharingapp-8cfb7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-22T17:50:50.221Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ridesharingapp-8cfb7:testIamPermissions 200
+[debug] [2022-05-22T17:50:50.221Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ridesharingapp-8cfb7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-22T17:50:50.221Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/ridesharingapp-8cfb7/serviceAccounts/ridesharingapp-8cfb7@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-05-22T17:50:50.222Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/ridesharingapp-8cfb7/serviceAccounts/ridesharingapp-8cfb7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-05-22T17:50:50.542Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/ridesharingapp-8cfb7/serviceAccounts/ridesharingapp-8cfb7@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-05-22T17:50:50.542Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/ridesharingapp-8cfb7/serviceAccounts/ridesharingapp-8cfb7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-05-22T17:50:50.542Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ridesharingapp-8cfb7 [none]
+[debug] [2022-05-22T17:50:50.832Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ridesharingapp-8cfb7 200
+[debug] [2022-05-22T17:50:50.833Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ridesharingapp-8cfb7 {"projectId":"ridesharingapp-8cfb7","projectNumber":"905685576767","displayName":"RideSharingApp","name":"projects/ridesharingapp-8cfb7","resources":{"hostingSite":"ridesharingapp-8cfb7","realtimeDatabaseInstance":"ridesharingapp-8cfb7-default-rtdb","storageBucket":"ridesharingapp-8cfb7.appspot.com","locationId":"europe-west6"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ridesharingapp-8cfb7'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2022-05-22T17:50:50.838Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:372:5)
+    at validateString (node:internal/validators:120:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:122:45)
+    at getChildEnvironment (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:9)
+    at async deploy (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2022-05-22T17:51:03.838Z] ----------------------------------------------------------------------
+[debug] [2022-05-22T17:51:03.840Z] Command:       E:\Code\Node\node.exe C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-05-22T17:51:03.840Z] CLI Version:   11.0.0
+[debug] [2022-05-22T17:51:03.841Z] Platform:      win32
+[debug] [2022-05-22T17:51:03.841Z] Node Version:  v16.15.0
+[debug] [2022-05-22T17:51:03.842Z] Time:          Sun May 22 2022 20:51:03 GMT+0300 (Ora de vară a Europei de Est)
+[debug] [2022-05-22T17:51:03.842Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-22T17:51:03.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-22T17:51:03.911Z] > authorizing via signed-in user (bogdan.ghinga@gmail.com)
+[debug] [2022-05-22T17:51:03.911Z] [iam] checking project ridesharingapp-8cfb7 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-05-22T17:51:03.914Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/ridesharingapp-8cfb7:testIamPermissions [none]
+[debug] [2022-05-22T17:51:03.915Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ridesharingapp-8cfb7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-22T17:51:04.192Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/ridesharingapp-8cfb7:testIamPermissions 200
+[debug] [2022-05-22T17:51:04.192Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/ridesharingapp-8cfb7:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-05-22T17:51:04.192Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/ridesharingapp-8cfb7/serviceAccounts/ridesharingapp-8cfb7@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-05-22T17:51:04.192Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/ridesharingapp-8cfb7/serviceAccounts/ridesharingapp-8cfb7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-05-22T17:51:04.458Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/ridesharingapp-8cfb7/serviceAccounts/ridesharingapp-8cfb7@appspot.gserviceaccount.com:testIamPermissions 200
+[debug] [2022-05-22T17:51:04.458Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/ridesharingapp-8cfb7/serviceAccounts/ridesharingapp-8cfb7@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-05-22T17:51:04.459Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ridesharingapp-8cfb7 [none]
+[debug] [2022-05-22T17:51:04.735Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ridesharingapp-8cfb7 200
+[debug] [2022-05-22T17:51:04.735Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ridesharingapp-8cfb7 {"projectId":"ridesharingapp-8cfb7","projectNumber":"905685576767","displayName":"RideSharingApp","name":"projects/ridesharingapp-8cfb7","resources":{"hostingSite":"ridesharingapp-8cfb7","realtimeDatabaseInstance":"ridesharingapp-8cfb7-default-rtdb","storageBucket":"ridesharingapp-8cfb7.appspot.com","locationId":"europe-west6"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'ridesharingapp-8cfb7'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2022-05-22T17:51:04.739Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:372:5)
+    at validateString (node:internal/validators:120:11)
+    at Object.join (node:path:429:7)
+    at Config.path (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:122:45)
+    at getChildEnvironment (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:50:49)
+    at runTargetCommands (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:71:14)
+    at C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\lifecycleHooks.js:122:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async chain (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:33:9)
+    at async deploy (C:\Users\bogda\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:67:5)
+[error] 
+[error] Error: An unexpected error has occurred.
